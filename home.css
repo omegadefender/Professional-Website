@@ -1,0 +1,21 @@
+body    { background-color: #144182;}
+
+h1      { font-family: Nunito Sans;
+        color: #ABB49B;
+        font-size: 72px; }
+
+h2      { font-family: Nunito Sans;
+          color: #000000;
+        font-size: 48px;}
+
+h3      {display: inline-block;}
+
+a       { font-family: Paytone One;
+          color: #88AFDD;
+          text-decoration: none;
+          font-size: 48px;
+        }
+
+.links { max-width: 100%;
+            height: auto;
+          }
