@@ -3,7 +3,9 @@ body {  background-color: #144182;
 h1   {  font-family: Paytone One;
         color: #88AFDD;
         text-decoration: none;
-        font-size: 80px;
+        font-size: 70px;
+        text-align: center;
+        margin: 0px;
       }
 .links { max-width: 100%;
     height: auto;
