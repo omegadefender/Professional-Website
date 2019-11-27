@@ -1,10 +1,10 @@
 # Portfolio Assignment
 ## **HTML and CSS**
 
-Project url is 
-https://jameshastings.netlify.com
+Project URL
+https://jameshastings.netlify.com/
 
-Github repo is at
+Github
 https://github.com/omegadefender/HTML-CSS-Portfolio
 
 ### **Description**
