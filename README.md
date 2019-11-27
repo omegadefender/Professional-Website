@@ -1,4 +1,4 @@
-# Portfolio Assignment
+# My Website
 ## **HTML and CSS**
 
 Project URL
@@ -9,12 +9,4 @@ https://github.com/omegadefender/HTML-CSS-Portfolio
 
 ### **Description**
 
-The purpose of this website is to use basic HTML and CSS programming skills to build a website that has information about my job history and education.
-
-There is a main landing page, and three seperate pages that contain more details.
-
-#### Tech Stack
-HTML CSS Github and Netlify
-
-#### Design Documentation
-https://www.figma.com/file/FuW7ViLxJfvLKAlbyWHfAmyZ/Project-Portfolio?node-id=0%3A1
+This is my personal website, for practising my web development skills, and blogging.
