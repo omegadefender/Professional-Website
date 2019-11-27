@@ -2,9 +2,7 @@
 ## **HTML and CSS**
 
 Project url is 
-https://distracted-hodgkin-8da3c3.netlify.com/
-
-https://github.com/omegadefender/HTML-CSS-Portfolio
+https://jameshastings.netlify.com/
 
 Github repo is at
 https://github.com/omegadefender/HTML-CSS-Portfolio
