@@ -1,0 +1,28 @@
+body { background-color: black;
+    }
+
+h1   {  font-family: Paytone One;
+        color: #88AFDD;
+        text-decoration: none;
+        font-size: 70px;
+        text-align: center;
+        margin: 0px;}
+
+.links {max-width: 100%;
+        height: auto;
+  }     
+
+  p { font-family: Nunito Sans;
+    color: #88AFDD;
+  font-size: 20px;}
+
+  h4 {  font-family: Nunito Sans;
+        color: #ABB49B;
+        font-size: 20px;
+    }   
+
+a     { font-family: Paytone One;
+        color: #88AFDD;
+        text-decoration: none;
+        font-size: 20px;
+      }
