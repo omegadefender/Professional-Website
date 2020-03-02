@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
 
-h1 {
+h1, h2, h3, h4 {
   color: #edf0f1;
-  text-align: center;
   font-family: "Montserrat", sans-serif;
 }
+
+h1 {
+    text-align: center;
+  }  
 
 p {
   color: #edf0f1;
@@ -71,26 +74,7 @@ button {
 button:hover {
     background-color:  rgba(0,136,169,0.8);
 }
-h1 {
-    color: #edf0f1;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-  }
-
-h3 {    font-family: Nunito Sans;
-        color: #ABB49B;
-        font-size: 24px;
-    }
-  
-h4 {    font-family: Nunito Sans;
-        color: #ABB49B;
-        font-size: 20px;}   
 
 .links { max-width: 100%;
          height: auto;
-    }
-
-p { font-family: Nunito Sans;
-    color: #88AFDD;
-    font-size: 20px;
     }
