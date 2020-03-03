@@ -7,6 +7,10 @@
     background-color: #24252A;
 }
 
+div {
+    padding: 10px;
+}
+
 h1, p, li, a, button {
     color: #edf0f1;
     font-family: "Montserrat", sans-serif;
@@ -26,7 +30,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px;
+    padding: 6px;
 }
 
 .logo {
