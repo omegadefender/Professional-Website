@@ -24,7 +24,7 @@ p {
   text-align: justify;
 }
 
-li, a, button {
+li, ul, a, button {
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
@@ -36,6 +36,7 @@ header {
     align-items: center;
     padding: 6px;
 }
+
 
 .logo {
     cursor: pointer;
