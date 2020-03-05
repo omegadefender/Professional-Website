@@ -43,6 +43,10 @@ a.reg-anchor {
     color:  rgba(0,136,169,0.8);
 }
 
+b {
+    color: #000;
+}
+
 .logo {
     cursor: pointer;
     margin-right: auto;
