@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="stylesheets/generic.css">
+        <link rel="stylesheet" href="stylesheets/contact.css">
         <title>Contact</title> 
     </head>
     <body>
@@ -24,6 +25,29 @@
             <p><a class="reg-anchor" href="https://github.com/omegadefender" target="_blank" rel="noopener noreferrer">Click here</a></p><br>
             <h2>Stack<b>overflow</b></h2>
             <p><a class="reg-anchor" href="https://stackoverflow.com/users/10005216/james-h" target="_blank" rel="noopener noreferrer">Click here</a></p>
-        </div>        
+        </div>
+        <div class="contact_form">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name...">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+          
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your email address...">
+              
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Email Subject...">
+              
+              <label for="body">Email Body</label>
+              <textarea id="body" name="body" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+                  
     </body>
 </html>
