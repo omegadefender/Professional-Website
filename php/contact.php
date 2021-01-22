@@ -16,5 +16,6 @@ if(isset($_POST['submit'])) {
     mail($to, $subject, $message, $headers);
     echo "<h3>Your email has been sent!</h3><p>Thanks for contacting me. I'll get back to you as soon as I can</p><br>
     <p>Click <a href='../index.html'>here</a> to go back to my homepage</p>";
+    echo $subject;
 }
 ?>
