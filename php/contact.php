@@ -5,7 +5,6 @@ $emailaddress = '';
 $to = 'hastings.james.m@gmail.com';
 $subject = getenv('SUBJECT');
 $message  = '';
-$headers = '';
 
 if(isset($_POST['submit'])) {
     $first_name = htmlspecialchars($_POST["firstname"]);
