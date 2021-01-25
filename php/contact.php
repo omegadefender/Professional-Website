@@ -28,7 +28,7 @@ $address = getenv('GMAIL_USERNAME');
     $mail->Username   = getenv("MAILGUN_SMTP_LOGIN"); // SMTP username
     $mail->Password   = getenv('MAILGUN_SMTP_PASSWORD'); // SMTP password
     $mail->SMTPSecure = 'tls';
-    $mail->Port       = 587; // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+    $mail->Port       = 25; // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     $mail->From = getenv('GMAIL_USERNAME');
     $mail->FromName = 'Mailgun';
