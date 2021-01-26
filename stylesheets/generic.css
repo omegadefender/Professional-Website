@@ -35,6 +35,10 @@ li, ul, a.nav_anchor, button {
     background-color:  black;
 }
 
+ #jhlogo {
+    margin-right: auto;
+}
+
 header {
     display: flex;
     justify-content: flex-end;

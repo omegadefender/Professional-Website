@@ -1,3 +1,18 @@
+label {
+  font-family: "Montserrat", sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  color: #E19510;
+  }
+
+  h1 {
+    width: 50%;
+  }
+
+.contact_form {
+    padding: 8px;
+  }
+
 input[type=text], input[type=email], select, textarea {
     width: 100%;
     padding: 6px;
@@ -26,17 +41,6 @@ input[type=submit]:hover {
     background-color: #0088a9;
   }
 
-label {
-  font-family: "Montserrat", sans-serif;
-  font-size: x-large;
-  font-weight: bold;
-  color: #E19510;
-  }
-
-.contact_form {
-    padding: 8px;
-  }
-  
 #name {
   width: 60%;
   display: block;
