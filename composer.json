@@ -1,12 +1,9 @@
 {
     "require": {
         "phpmailer/phpmailer": "^6.2"
-    }
-    {
-        "scripts": {
-          "post-install-cmd": [
-            "composer install"
-          ]
-        }
-      }
+    },
+    
+    "scripts": {
+        "post-install-cmd": "composer install"
+        }      
 }
