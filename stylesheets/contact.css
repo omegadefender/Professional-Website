@@ -5,11 +5,12 @@ input[type=text], input[type=email], select, textarea {
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
     font-family: "Montserrat", sans-serif;
-    color: #edf0f1;
+    color: #1E07F1;
     font-size: medium;
+    background-color: #ffffff;
   }
 
 input[type=submit] {
@@ -27,12 +28,31 @@ input[type=submit]:hover {
 
 label {
   font-family: "Montserrat", sans-serif;
-  font-size: large;
-  color: #edf0f1;
+  font-size: x-large;
+  font-weight: bold;
+  color: #E19510;
   }
 
 .contact_form {
     padding: 8px;
   }
-
   
+#name {
+  width: 60%;
+  display: block;
+}
+
+#email {
+  width: 60%;
+  display: block;
+}
+
+#subject {
+  width: 60%;
+  display: block;
+}
+
+#body {
+  width: 60%;
+  display: block;
+}
