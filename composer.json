@@ -4,6 +4,6 @@
     },
     
     "scripts": {
-        "post-install-cmd": "composer install"
+        "post-install-cmd": "@composer install"
         }      
 }
