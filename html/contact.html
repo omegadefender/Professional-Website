@@ -10,7 +10,7 @@
     </head>
     <body>
         <header>
-            <a id="jhlogo" href="../index.html"><img width="70px" class="logo" src="../images/JH_line_symbol.svg" alt="logo"></a>
+            <a id="jhlogo" href="../index.html"><img class="logo" src="../images/JH_line_symbol.svg" alt="logo"></a>
             <nav>
                 <ul class="nav_links">
                 <li><a class="nav_anchor" href="../index.html">Home</a></li>
@@ -27,12 +27,16 @@
             <form action="../php/contact.php" method="POST">          
               <label for="name">NAME</label>
               <input type="text" id="name" name="name" placeholder="Your name...">
+
               <label for="email">EMAIL</label>
-              <input type="email" id="email" name="emailaddress" placeholder="Your email address...">              
+              <input type="email" id="email" name="email" placeholder="Your email address...">
+
               <label for="subject">SUBJECT</label>
-              <input type="text" id="subject" name="subject" placeholder="Email Subject...">              
+              <input type="text" id="subject" name="subject" placeholder="Email Subject..."> 
+
               <label for="body">MESSAGE</label>
-              <textarea id="body" name="body" placeholder="Write something.." style="height:200px"></textarea>          
+              <textarea id="body" name="body" placeholder="Write something.."></textarea>
+
               <input type="submit" name="submit" value="Submit">       
             </form>
           </div>                  

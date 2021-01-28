@@ -7,21 +7,9 @@
     background-color: #24252A;
 }
 
-div {
-    padding: 8px;
-}
-
 h1, h2, h3, h4, p, li, a, button {
     color: #edf0f1;
     font-family: "Montserrat", sans-serif;
-}
-
-h1 {
-    text-align: center;
-}
-
-h3 {
-    text-decoration: underline;
 }
 
 li, ul, a.nav_anchor, button {
@@ -31,8 +19,8 @@ li, ul, a.nav_anchor, button {
     background-color:  black;
 }
 
- #jhlogo {
-    margin-right: auto;
+div {
+    padding: 8px;
 }
 
 header {
@@ -41,36 +29,6 @@ header {
     align-items: center;
     padding: 0px;
     background-color:  black;
-}
-
-a.reg-anchor {
-    color:  rgba(0,136,169,0.8);
-}
-
-b {
-    color: #000;
-}
-
-.logo {
-    cursor: pointer;
-    margin-right: auto;
-}
-
-.nav_links {
-    list-style: none;
-}
-
-.nav_links li {
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.nav_links li a {
-    transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover {
-    color: #0088a9;
 }
 
 button {
@@ -85,4 +43,47 @@ button {
 
 button:hover {
     background-color:  rgba(0,136,169,0.8);
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+b {
+    color: #000;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+a.reg-anchor {
+    color:  rgba(0,136,169,0.8);
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    width: 70px;
+}
+
+#jhlogo {
+    margin-right: auto;    
 }
