@@ -24,10 +24,6 @@ h3 {
     text-decoration: underline;
 }
 
-p {
-    text-align: justify;
-}
-
 li, ul, a.nav_anchor, button {
     font-weight: 500;
     font-size: 16px;

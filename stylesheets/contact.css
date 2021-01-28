@@ -9,6 +9,11 @@ label {
     width: 50%;
   }
 
+  p {
+    text-align: center;
+    width: 50%;
+}
+
 .contact_form {
     padding: 8px;
   }
