@@ -28,7 +28,7 @@ $address = getenv('GMAIL_USERNAME');
     $mail->addAddress(getenv('GMAIL_USERNAME')); // Add a recipient
     $mail->isHTML(true);
     $mail->Subject = $subject;
-    $mail->Body    = "Hi James <br><br> You got a new message from: $name<br>Their email
+    $mail->Body    = "Hi James <br><br>New message from: $name<br>Their email
     address: $emailaddress<br>Who wrote...<br><br> $message";
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
     if(isset($_POST["name"]) && $name !== '') {
