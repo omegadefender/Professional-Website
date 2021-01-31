@@ -19,7 +19,7 @@ textarea {
 }
 
 .contact_form {
-    padding: 8px;
+    padding-left: 8px;
   }
 
 input[type=text], input[type=email], select, textarea {
