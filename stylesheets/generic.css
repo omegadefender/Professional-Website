@@ -31,7 +31,7 @@ header {
     background-color:  black;
 }
 
-button {
+#contactButton {
     margin-left: 20px;
     padding: 9px 25px;
     background-color: rgba(0,136,169,1);
@@ -41,7 +41,7 @@ button {
     transition: all 0.3s ease 0s;
 }
 
-button:hover {
+#contactButton:hover {
     background-color:  rgba(0,136,169,0.8);
 }
 

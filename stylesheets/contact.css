@@ -6,7 +6,7 @@ label {
   }
 
   h1 {
-    width: 50%;
+    width: 40%;
   }
 
   p {
@@ -51,21 +51,21 @@ input[type=submit]:hover {
   }
 
 #name {
-  width: 50%;
+  width: 40%;
   display: block;
 }
 
 #email {
-  width: 50%;
+  width: 40%;
   display: block;
 }
 
 #subject {
-  width: 50%;
+  width: 40%;
   display: block;
 }
 
 #body {
-  width: 50%;
+  width: 40%;
   display: block;
 }
