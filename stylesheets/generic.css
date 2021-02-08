@@ -32,31 +32,17 @@ header {
     background-color:  black;
 }
 
-#contactButton {
-    margin-left: 20px;
-    padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-#contactButton:hover {
-    background-color:  rgba(0,136,169,0.8);
-}
-
-.codelans {
-    width: 18px;
-    height: 18px;
-}
-
 h1 {
     text-align: center;
 }
 
 b {
     color: #000;
+}
+
+.codelans {
+    width: 18px;
+    height: 18px;
 }
 
 .nav_links li a {
@@ -87,6 +73,20 @@ a.reg-anchor {
     height: 50px;
     background-color: black;
     margin-left: 0mm;
+}
+
+#contactButton {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+#contactButton:hover {
+    background-color:  rgba(0,136,169,0.8);
 }
 
 #jhlogo {
