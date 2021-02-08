@@ -15,7 +15,6 @@ if(isset($_POST['submit'])) {
 
 $mail = new PHPMailer(true);
 $address = getenv('GMAIL_USERNAME');
-    //$mail->SMTPDebug = SMTP::DEBUG_SERVER; // Enable verbose debug output
     $mail->isSMTP();
     $mail->Host       = 'smtp.mailgun.org';
     $mail->SMTPAuth   = true;
@@ -25,7 +24,7 @@ $address = getenv('GMAIL_USERNAME');
     $mail->Port       = getenv('MAILGUN_SMTP_PORT');
     $mail->From       = getenv('GMAIL_USERNAME');
     $mail->FromName   = 'number8websites.com';
-    $mail->addAddress(getenv('GMAIL_USERNAME')); // Add a recipient
+    $mail->addAddress(getenv('GMAIL_USERNAME'));
     $mail->isHTML(true);
     $mail->Subject = $subject;
     $mail->Body    = "Hi James <br><br>New message from: $name<br>Their email

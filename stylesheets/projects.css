@@ -3,5 +3,9 @@ h3 {
     font-size: x-large;
     font-weight: bold;
     color: #E19510;
-    text-decoration: unset;
+    text-decoration: none;
+}
+
+b {
+    color: green;
 }
