@@ -6,8 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="../stylesheets/generic.css">
         <link rel="stylesheet" href="../stylesheets/about.css">
-        <title>About</title>
         <link rel="shortcut icon", href="../images/favicon.ico", type="images/jpg">
+        <script type="text/javascript" src="../javascript/about.js"></script>       
+        <title>About</title>        
     </head>
     <body>
         <header>
@@ -22,28 +23,13 @@
         </header>
         <div>
             <h1>About</h1><br>
-            <button id="button1" onclick="hider()"><figure><img id="mysteryme" src="../images/questionimg.jpg"><figcaption id="cap">Click photo</figcaption>
-            </figure></button>
+            <button id="button1" onclick="hider()">
+                <figure><img id="mysteryme" src="../images/questionimg.jpg"><figcaption id="cap">Click photo</figcaption></figure>
+            </button>
             <div id="aboutme" style="display: none">
                 <p>I am a web-developer, and a programming enthuthiast</p>
                 <p><a class="reg-anchor" href="https://stackoverflow.com/users/10005216/james-h" target="_blank" rel="noopener noreferrer">Click here</a>... to go to my Stack Overflow profile</p><br> 
-            </div>
-            <script>
-                function hider() {
-                var me = document.getElementById("aboutme");
-                var img = document.getElementById("mysteryme");
-                var caption = document.getElementById("cap")
-                if (me.style.display === "none") {
-                    me.style.display = "block";
-                    img.src = "../images/Profile.png";
-                    caption.innerHTML = "James Hastings";
-                } else {
-                    me.style.display = "none";
-                    img.src = "../images/questionimg.jpg";
-                    caption.innerHTML = "Click photo"
-                }
-              }
-            </script>                     
+            </div>                
         </div>                  
     </body>
 </html>

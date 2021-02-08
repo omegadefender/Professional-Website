@@ -9,4 +9,4 @@ https://www.number8websites.com
 
 This is my personal website that I use for practising my web development skills.
 
-Built using HTML, CSS, and PHP. Deployed on Heroku
+Built using HTML, CSS, Javascript, and PHP. Deployed on Heroku
