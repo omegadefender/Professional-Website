@@ -11,4 +11,4 @@ function hider() {
         img.src = "../images/mysteryman.jpg";
         caption.innerHTML = "Who am I?"
     }
-  }
+}
