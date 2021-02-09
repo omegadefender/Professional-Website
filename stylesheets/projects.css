@@ -1,5 +1,5 @@
 html {
-    background-image: url(/images/background/projects2.png);
+    background-image: url(/images/background/portfolio.jpg);
     background-color: #cccccc;
     background-size: cover;
   }
@@ -8,6 +8,11 @@ h3 {
     font-family: "Montserrat", sans-serif;
     font-size: x-large;
     font-weight: bold;
-    color: #E19510;
+    color: gold;
     text-decoration: none;
+}
+
+.box01portfolio {
+  background-color: purple;
+  width: 55%;
 }
