@@ -8,7 +8,7 @@ function hider() {
         caption.innerHTML = "James Hastings";
     } else {
         me.style.display = "none";
-        img.src = "../images/questionimg.jpg";
-        caption.innerHTML = "Click photo"
+        img.src = "../images/mysteryman.jpg";
+        caption.innerHTML = "Who am I?"
     }
   }

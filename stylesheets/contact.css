@@ -1,3 +1,9 @@
+html {
+  background-image: url(/images/background/contact.jpg);
+  background-color: #cccccc;
+  background-size: fit;
+}
+
 label {
   font-family: "Montserrat", sans-serif;
   font-size: x-large;
@@ -5,13 +11,13 @@ label {
   color: #E19510;
   }
 
-  h1 {
-    width: 40%;
-  }
+h1 {
+  width: 40%;
+}
 
-  p {
-    text-align: center;
-    width: 50%;
+p {
+  text-align: center;
+  width: 50%;
 }
 
 textarea {
