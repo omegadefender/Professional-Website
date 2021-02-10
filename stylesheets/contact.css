@@ -39,7 +39,7 @@ input[type=text], input[type=email], select, textarea {
 }
 
 input[type=submit] {
-    background-color: #0088a9;
+    background-color:rgba(0,136,169,1);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -50,7 +50,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #0088a9;
+    background-color:rgba(0,136,169,0.8);
 }
 
 #name {
