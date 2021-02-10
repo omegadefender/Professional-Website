@@ -8,11 +8,11 @@ h3 {
     font-family: "Montserrat", sans-serif;
     font-size: x-large;
     font-weight: bold;
-    color: gold;
+    color: lightgreen;
     text-decoration: none;
 }
 
 .box01portfolio {
-  background-color: purple;
-  width: 55%;
+  background-color: darkslategrey;
+  width: 48%;
 }

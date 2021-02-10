@@ -33,6 +33,7 @@ header {
 
 h1 {
     text-align: center;
+    color: lightcyan;
 }
 
 b {
@@ -40,8 +41,8 @@ b {
 }
 
 .codelans {
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
 }
 
 .nav_links li a {
@@ -62,7 +63,8 @@ b {
 }
 
 a.reg-anchor {
-    color: yellowgreen;
+    color: orange;
+    font-style: italic;
 }
 
 .logo {

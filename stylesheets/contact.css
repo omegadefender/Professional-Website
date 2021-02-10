@@ -1,5 +1,5 @@
 html {
-  background-image: url(/images/background/contacts02.png);
+  background-image: url(/images/background/contact01.jpg);
   background-color: #cccccc;
   background-size: cover;
 }
@@ -8,7 +8,6 @@ label {
   font-family: "Montserrat", sans-serif;
   font-size: x-large;
   font-weight: bold;
-  font-style: italic;
   color: #E19510;
 }
 
