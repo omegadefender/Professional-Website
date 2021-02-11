@@ -7,16 +7,17 @@
         <link rel="stylesheet" href="../stylesheets/generic.css">
         <link rel="stylesheet" href="../stylesheets/about.css">
         <link rel="shortcut icon", href="../images/number8.jpg", type="images/jpg">
+        <script type="text/javascript" src="../javascript/generic.js"></script>
         <script type="text/javascript" src="../javascript/about.js"></script>       
         <title>About</title>        
     </head>
-    <body>
+    <body onload="currentLink()">
         <header>
             <a id="jhlogo" href="../index.html"><img class="logo" src="../images/number8.jpg" alt="logo"></a>
             <nav>
                 <ul class="nav_links">
                 <li><a class="nav_anchor" href="../index.html">Home</a></li>
-                <li><a class="nav_anchor" href="about.html">About</a></li>
+                <li><a class="nav_anchor" id="navHome" href="about.html">About</a></li>
                 <li><a class="nav_anchor" href="/html/portfolio.html">Portfolio</a></li></ul>            
             </nav>
             <a class="nav_anchor" href="contact.html"><button id="contactButton">Contact</button></a>

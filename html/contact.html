@@ -4,12 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon", href="../images/number8.jpg", type="images/jpg">
         <link rel="stylesheet" href="../stylesheets/generic.css">
         <link rel="stylesheet" href="../stylesheets/contact.css">
+        <script rel="text/javascript" src="../javascript/generic.js"></script>
         <title>Contact</title>
-        <link rel="shortcut icon", href="../images/number8.jpg", type="images/jpg">
     </head>
-    <body>
+    <body onload="currentLink()">
         <header>
             <a id="jhlogo" href="../index.html"><img class="logo" src="../images/number8.jpg" alt="logo"></a>
             <nav>
@@ -18,10 +19,9 @@
                 <li><a class="nav_anchor" href="about.html">About</a></li>
                 <li><a class="nav_anchor" href="/html/portfolio.html">Portfolio</a></li></ul>            
             </nav>
-            <a class="nav_anchor" href="contact.html"><button id="contactButton">Contact</button></a>
+            <a class="nav_anchor" id="navHome" href="contact.html"><button id="contactButton">Contact</button></a>
         </header>
-        <div><br>
-            <h1>Contact Page</h1>
+        <h1>Contact Page</h1>
         <div class="contact_form">
             <form action="../php/contact.php" method="POST">          
               <label for="name">Name</label>
@@ -34,6 +34,6 @@
               <textarea id="body" name="body" placeholder="Write something.."></textarea><br>
               <input type="submit" name="submit" value="SUBMIT">       
             </form>
-          </div></div>                  
+          </div>                  
     </body>
 </html>

@@ -4,25 +4,27 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon", href="../images/number8.jpg", type="images/jpg">
         <link rel="stylesheet" href="stylesheets/generic.css">
         <link rel="stylesheet" href="stylesheets/index.css">
-        <link rel="shortcut icon", href="../images/number8.jpg", type="images/jpg">
+        <script rel="text/javascript" src="javascript/generic.js"></script>
         <title>Home</title>            
     </head>
-    <body> 
+    <body onload="currentLink()"> 
         <header>
             <a id="jhlogo" href="../index.html"><img class="logo" src="../images/number8.jpg" alt="logo"></a>
             <nav>
                 <ul class="nav_links">
-                <li><a class="nav_anchor" href="index.html">Home</a></li>
+                <li><a class="nav_anchor" id="navHome" href="index.html">Home</a></li>
                 <li><a class="nav_anchor" href="/html/about.html">About</a></li>
                 <li><a class="nav_anchor" href="/html/portfolio.html">Portfolio</a></li></ul>            
             </nav>
             <a class="nav_anchor" href="html/contact.html"><button id="contactButton">Contact</button></a>
         </header>
         <div><br>
-            <h1>number8websites.com</h1><br><br>
+            <h1>number8websites.com</h1><br>
             <p>Welcome to my web-development site &#127773;</p>
+            <div id="test"></div>
         </div>        
     </body>   
 </html>
