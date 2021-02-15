@@ -5,9 +5,15 @@ require '../vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
+// written this function but it isn't called yet
+function filterInput($input) {
+    $data = htmlspecialchars($input);
+    return $data;
+}
 
 if(isset($_POST['submit'])) {
-    $name = htmlspecialchars($_POST["name"]);
+    $name = filterInput($_POST["name"]);
+    echo $name;
     $emailaddress = htmlspecialchars($_POST["email"]);
     $subject = htmlspecialchars($_POST["subject"]);
     $message = htmlspecialchars($_POST["body"]);

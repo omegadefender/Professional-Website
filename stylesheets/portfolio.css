@@ -15,4 +15,5 @@ h3 {
 .box01portfolio {
   background-color: darkslategrey;
   width: 48%;
+  display: none;
 }
