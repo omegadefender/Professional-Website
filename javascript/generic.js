@@ -13,7 +13,7 @@ currentLink = () => {
         document.getElementById("navHome").style.color = '#0088a9'
         $(document).ready(function() {
             $(".box01portfolio").hide()
-            $(".box01portfolio").fadeIn(1500)
+            $(".box01portfolio").fadeIn(1000)
             })
         }
 
