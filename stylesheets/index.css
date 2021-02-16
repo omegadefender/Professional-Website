@@ -3,18 +3,13 @@ html {
 }
 
 body {
-  /*height: 100%;
-  display: flex;
-  flex-direction: column;*/
   margin:0;
-
 }
 
-/*div { 
-  background-color: green;
-  opacity: 0.5;
-  flex-grow: 1;
-      }*/
+h1 {
+  font-family:monospace;
+  color: black;
+}
 
 h2 {
     text-align: center;
@@ -23,8 +18,6 @@ h2 {
 p {
     text-align: center;
 }
-
-/*css for background */
 
 .bg {
   animation:slide 3s ease-in-out infinite alternate;
@@ -58,11 +51,6 @@ p {
   text-align:center;
   top:50%;
   transform:translate(-50%, -50%);
-}
-
-h1 {
-  font-family:monospace;
-  color: black;
 }
 
 @keyframes slide {
