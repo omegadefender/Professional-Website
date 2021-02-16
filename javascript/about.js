@@ -1,4 +1,4 @@
-function hider() {
+hider = () => {
     var me = document.getElementById("aboutme");
     var img = document.getElementById("mysteryme");
     var caption = document.getElementById("cap")
