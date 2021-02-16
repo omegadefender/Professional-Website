@@ -1,12 +1,9 @@
-# My Website
-## **HTML and CSS**
-
-Project URL
+# My Main Website
+## **HTML, CSS, PHP, and Javascript (jQuery)**
 
 https://www.number8websites.com
 
 ### **Description**
 
-This is my personal website that I use for practising my web development skills.
-
-Built using HTML, CSS, Javascript, and PHP. Deployed on Heroku
+Built in simple HTML/CSS with some PHP and jQuery.
+Deployed on Heroku.
