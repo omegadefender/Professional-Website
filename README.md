@@ -5,5 +5,5 @@ https://www.number8websites.com
 
 ### **Description**
 
-Built in simple HTML/CSS with some PHP and jQuery.
+Built in HTML/CSS with some PHP and jQuery. No web framework used.
 Deployed on Heroku.

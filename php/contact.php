@@ -5,22 +5,23 @@ require '../vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
-// written this function but it isn't called yet
+
+$myAddress = getenv('GMAIL_USERNAME');
+
 function filterInput($input) {
-    $data = htmlspecialchars($input);
+    $data = trim($input);
+    $data = htmlspecialchars($data);
     return $data;
 }
 
 if(isset($_POST['submit'])) {
     $name = filterInput($_POST["name"]);
-    echo $name;
-    $emailaddress = htmlspecialchars($_POST["email"]);
-    $subject = htmlspecialchars($_POST["subject"]);
-    $message = htmlspecialchars($_POST["body"]);
+    $emailaddress = filterInput($_POST["email"]);
+    $subject = filterInput($_POST["subject"]);
+    $message = filterInput($_POST["body"]);
 }
 
 $mail = new PHPMailer(true);
-$address = getenv('GMAIL_USERNAME');
     $mail->isSMTP();
     $mail->Host       = 'smtp.mailgun.org';
     $mail->SMTPAuth   = true;
@@ -28,18 +29,18 @@ $address = getenv('GMAIL_USERNAME');
     $mail->Password   = getenv('MAILGUN_SMTP_PASSWORD');
     $mail->SMTPSecure = 'tls';
     $mail->Port       = getenv('MAILGUN_SMTP_PORT');
-    $mail->From       = getenv('GMAIL_USERNAME');
+    $mail->From       = $myAddress;
     $mail->FromName   = 'number8websites.com';
-    $mail->addAddress(getenv('GMAIL_USERNAME'));
+    $mail->addAddress($myAddress);
     $mail->isHTML(true);
-    $mail->Subject = $subject;
-    $mail->Body    = "Hi James <br><br>New message from: $name<br>Their email
-    address: $emailaddress<br>Who wrote...<br><br> $message";
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+    $mail->Subject    = $subject;
+    $mail->Body       = "Hi James <br><br>New message from: $name
+                        <br>Their email address is: $emailaddress
+                        <br>And they wrote...<br><br> $message";
+
     if(isset($_POST["name"]) && $name !== '') {
-        $name = htmlspecialchars($_POST["name"]);
         $mail->send();
-        echo 'Message has been sent<br><br><a href="../index.html">Click here</a> to go back to the homepage';
+        echo 'Your message has been sent<br><br><a href="../index.html">Click here</a> to go back to the homepage';
      } else {
          echo 'Your message has NOT been sent!<br>
          You forgot to fill in your name<br><br><a href="../html/contact.html">Click here</a> to go back to the form';
