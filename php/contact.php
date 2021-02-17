@@ -6,7 +6,12 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-$myAddress = getenv('GMAIL_USERNAME');
+$myemailAddress = getenv('GMAIL_USERNAME');
+$mgUsername = getenv("MAILGUN_SMTP_LOGIN");
+$mgPassword = getenv('MAILGUN_SMTP_PASSWORD');
+$mgPort = getenv('MAILGUN_SMTP_PORT');
+$from = 'admin@number8websites.com';
+$fromName = 'number8websites.com';
 
 function filterInput($input) {
     $data = trim($input);
@@ -21,29 +26,28 @@ if(isset($_POST['submit'])) {
     $message = filterInput($_POST["body"]);
 }
 
-$mail = new PHPMailer(true);
+if($name !== '') {
+  $mail = new PHPMailer(true);
     $mail->isSMTP();
     $mail->Host       = 'smtp.mailgun.org';
     $mail->SMTPAuth   = true;
-    $mail->Username   = getenv("MAILGUN_SMTP_LOGIN");
-    $mail->Password   = getenv('MAILGUN_SMTP_PASSWORD');
+    $mail->Username   = $mgUsername;
+    $mail->Password   = $mgPassword;
     $mail->SMTPSecure = 'tls';
-    $mail->Port       = getenv('MAILGUN_SMTP_PORT');
-    $mail->From       = $myAddress;
-    $mail->FromName   = 'number8websites.com';
-    $mail->addAddress($myAddress);
+    $mail->Port       = $mgPort;
+    $mail->From       = $from;
+    $mail->FromName   = $fromName;
+    $mail->addAddress($myemailAddress);
     $mail->isHTML(true);
     $mail->Subject    = $subject;
-    $mail->Body       = "Hi James <br><br>New message from: $name
-                        <br>Their email address is: $emailaddress
-                        <br>And they wrote...<br><br> $message";
-
-    if(isset($_POST["name"]) && $name !== '') {
-        $mail->send();
-        echo 'Your message has been sent<br><br><a href="../index.html">Click here</a> to go back to the homepage';
-     } else {
-         echo 'Your message has NOT been sent!<br>
-         You forgot to fill in your name<br><br><a href="../html/contact.html">Click here</a> to go back to the form';
-     }
+    $mail->Body       = "Hi James <br><br>New message from: <div style='color: blue;display: inline'>$name</div>
+                        <br>Their email address is: <div style='color: blue;display: inline'>$emailaddress</div>
+                        <br>And they wrote...</b><br><div style='color: blue'>{$message}</div>";
+    $mail->send();
+    echo 'Your message has been sent<br><br><a href="../index.html">Click here</a> to go back to the homepage';
+} else {
+    echo 'Your message has NOT been sent!<br>
+    You forgot to fill in your name<br><br><a href="../html/contact.html">Click here</a> to go back to the form';
+}
 
 ?>
