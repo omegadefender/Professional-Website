@@ -15,6 +15,7 @@ $fromName = 'number8websites.com';
 
 function filterInput($input) {
     $data = trim($input);
+    $data = stripslashes($data);
     $data = htmlspecialchars($data);
     return $data;
 }
@@ -26,7 +27,7 @@ if(isset($_POST['submit'])) {
     $message = filterInput($_POST["body"]);
 }
 
-if($name !== '') {
+if($_SERVER["REQUEST_METHOD"] == "POST") {
   $mail = new PHPMailer(true);
     $mail->isSMTP();
     $mail->Host       = 'smtp.mailgun.org';
@@ -41,7 +42,7 @@ if($name !== '') {
     $mail->isHTML(true);
     $mail->Subject    = $subject;
     $mail->Body       = "Hi James <br><br>New message from: <div style='color: blue;display: inline'>$name</div>
-                        <br>Their email address is: <div style='color: blue;display: inline'>$emailaddress</div>
+                        <br>Their email address is: <div style='display: inline'>$emailaddress</div>
                         <br>And they wrote...</b><br><div style='color: blue'>{$message}</div>";
     $mail->send();
     echo 'Your message has been sent<br><br><a href="../index.html">Click here</a> to go back to the homepage';
