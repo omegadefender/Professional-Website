@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../stylesheets/generic.css">
         <link rel="stylesheet" href="../stylesheets/contact.css">
         <script rel="text/javascript" src="../javascript/generic.js"></script>
+        <script rel="text/javascript" src="../javascript/contact.js"></script>
         <title>Contact</title>
     </head>
     <body onload="currentLink()">
@@ -26,9 +27,9 @@
         <div class="contact_form">
             <form action="../php/contact.php" method="POST">          
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name...">
+              <input type="text" id="name" name="name" placeholder="Your name..." required oninvalid="this.setCustomValidity('Name is required')" oninput="setCustomValidity('')">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="Your email address...">
+              <input type="email" id="email" name="email" placeholder="Your email address..." required oninvalid="this.setCustomValidity('Email address is required')" oninput="setCustomValidity('')">
               <label for="subject">Subject</label>
               <input type="text" id="subject" name="subject" placeholder="Email Subject...">
               <label for="body">Message</label>

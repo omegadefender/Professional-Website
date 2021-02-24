@@ -28,7 +28,7 @@ if(isset($_POST['submit'])) {
 }
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
-  $mail = new PHPMailer(true);
+    $mail = new PHPMailer(true);
     $mail->isSMTP();
     $mail->Host       = 'smtp.mailgun.org';
     $mail->SMTPAuth   = true;
@@ -49,6 +49,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     echo 'Your message has NOT been sent!<br>
     You forgot to fill in your name<br><br><a href="../html/contact.html">Click here</a> to go back to the form';
-}
+};
 
 ?>
