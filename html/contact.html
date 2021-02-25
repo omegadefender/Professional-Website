@@ -7,6 +7,8 @@
         <link rel="shortcut icon", href="../images/number8.jpg", type="images/jpg">
         <link rel="stylesheet" href="../stylesheets/generic.css">
         <link rel="stylesheet" href="../stylesheets/contact.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script rel="text/javascript" src="../javascript/generic.js"></script>
         <script rel="text/javascript" src="../javascript/contact.js"></script>
         <title>Contact</title>
@@ -27,13 +29,11 @@
         <div class="contact_form">
             <form action="../php/contact.php" method="POST">          
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name..." required oninvalid="this.setCustomValidity('Name is required')" oninput="setCustomValidity('')">
+              <input type="text" id="name1" name="name" placeholder="Your name..." required oninvalid="noName()" oninput="input()">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="Your email address..." required oninvalid="this.setCustomValidity('Email address is required')" oninput="setCustomValidity('')">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="Email Subject...">
+              <input type="email" id="email" name="email" placeholder="Your email address..." required oninvalid="noEmail()" oninput="input()">
               <label for="body">Message</label>
-              <textarea id="body" name="body" placeholder="Write something.."></textarea><br>
+              <textarea id="body" name="body" placeholder="Write me a message..."></textarea><br>
               <input type="submit" name="submit" value="SUBMIT">       
             </form>
           </div></div>                  

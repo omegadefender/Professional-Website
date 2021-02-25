@@ -10,6 +10,7 @@ $myemailAddress = getenv('GMAIL_USERNAME');
 $mgUsername = getenv("MAILGUN_SMTP_LOGIN");
 $mgPassword = getenv('MAILGUN_SMTP_PASSWORD');
 $mgPort = getenv('MAILGUN_SMTP_PORT');
+$subject = 'Someone Sent you a Message via Your Website';
 $from = 'admin@number8websites.com';
 $fromName = 'number8websites.com';
 
@@ -23,7 +24,6 @@ function filterInput($input) {
 if(isset($_POST['submit'])) {
     $name = filterInput($_POST["name"]);
     $emailaddress = filterInput($_POST["email"]);
-    $subject = filterInput($_POST["subject"]);
     $message = filterInput($_POST["body"]);
 }
 
