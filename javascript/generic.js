@@ -12,7 +12,7 @@ currentLink = () => {
     else if (lastStr === 'portfolio.html') {
         document.getElementById("navHome").style.color = '#0088a9'
         $(document).ready(function() {
-            $(".box01portfolio").fadeIn(1000)
+          $(".wrap").fadeIn(1500)
             })
         }
     else if (lastStr === 'contact.html') {

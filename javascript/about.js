@@ -9,6 +9,6 @@ hider = () => {
     } else {
         me.style.display = "none";
         img.src = "../images/mysteryman.jpg";
-        caption.innerHTML = "Who am I?"
+        caption.innerHTML = "Click Image"
     }
 }
