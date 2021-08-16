@@ -27,11 +27,28 @@ hider = () => {
     var caption = document.getElementById("cap")
     if (me.style.display === "none") {
         me.style.display = "block";
-        img.src = "../images/Profile.png";
+        img.src = "../images/Profile-min.png";
         caption.innerHTML = "James Hastings";
     } else {
         me.style.display = "none";
         img.src = "../images/mysteryman-min.jpg";
         caption.innerHTML = "Click Image"
     }
+}
+
+noName = () => {
+    let nameInput = document.getElementById("name1")
+    nameInput.setCustomValidity('Name is required')
+}
+
+noEmail = () => {
+    let emailInput = document.getElementById("email")
+    emailInput.setCustomValidity('Email address is required')
+}
+
+input = () => {
+    let nameInput = document.getElementById('name1')
+    let emailInput = document.getElementById("email")
+    nameInput.setCustomValidity('')
+    emailInput.setCustomValidity('')
 }
